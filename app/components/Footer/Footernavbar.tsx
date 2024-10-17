@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import {
   FaFacebookF,
   FaInstagram,
@@ -16,27 +15,36 @@ const FooterNavbar = () => {
         <span className="text-[#ECEEEC] text-base font-medium">Bike Bliss</span>
       </div>
       <div className="flex space-x-6">
-        <Link href="/features" className="text-[#ECEEEC] text-base font-medium">
+        {/* Change Links to anchor tags for smooth scrolling */}
+        <a
+          href="#main-features"
+          className="text-[#ECEEEC] text-base font-medium"
+        >
           Features
-        </Link>
-        <p className="text-[#ECEEEC] text-base font-medium">Testimonials</p>
-        <Link href="/faqs" className="text-[#ECEEEC] text-base font-medium">
+        </a>
+        <a
+          href="#testimonials"
+          className="text-[#ECEEEC] text-base font-medium"
+        >
+          Testimonials
+        </a>
+        <a href="#faqs" className="text-[#ECEEEC] text-base font-medium">
           FAQs
-        </Link>
+        </a>
       </div>
       <div className="flex space-x-4">
-        <Link href="https://facebook.com" aria-label="Facebook">
+        <a href="https://facebook.com" aria-label="Facebook">
           <FaFacebookF className="text-[#ECEEEC] text-2xl" />
-        </Link>
-        <Link href="https://instagram.com" aria-label="Instagram">
+        </a>
+        <a href="https://instagram.com" aria-label="Instagram">
           <FaInstagram className="text-[#ECEEEC] text-2xl" />
-        </Link>
-        <Link href="https://twitter.com" aria-label="Twitter">
+        </a>
+        <a href="https://twitter.com" aria-label="Twitter">
           <FaTwitter className="text-[#ECEEEC] text-2xl" />
-        </Link>
-        <Link href="https://linkedin.com" aria-label="LinkedIn">
+        </a>
+        <a href="https://linkedin.com" aria-label="LinkedIn">
           <FaLinkedinIn className="text-[#ECEEEC] text-2xl" />
-        </Link>
+        </a>
       </div>
     </nav>
   );
