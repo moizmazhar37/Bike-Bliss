@@ -16,13 +16,18 @@ const FooterNavbar = () => {
         <span className="text-[#ECEEEC] text-base font-medium">Bike Bliss</span>
       </div>
       <div className="flex space-x-6">
-        <Link href="/features" className="text-[#ECEEEC] text-base font-medium">
+        <a href="#features" className="text-[#ECEEEC] text-base font-medium">
           Features
-        </Link>
-        <p className="text-[#ECEEEC] text-base font-medium">Testimonials</p>
-        <Link href="/faqs" className="text-[#ECEEEC] text-base font-medium">
+        </a>
+        <a
+          href="#testimonials"
+          className="text-[#ECEEEC] text-base font-medium"
+        >
+          Testimonials
+        </a>
+        <a href="#faqs" className="text-[#ECEEEC] text-base font-medium">
           FAQs
-        </Link>
+        </a>
       </div>
       <div className="flex space-x-4">
         <Link href="https://facebook.com" aria-label="Facebook">
